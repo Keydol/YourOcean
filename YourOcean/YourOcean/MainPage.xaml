@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="YourOcean.MainPage"
+             Title="Вирощування ікри">
+
+    <StackLayout Padding="12" BackgroundColor="AliceBlue">
+        <Label x:Name="Test" 
+            Text="Виберіть час"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Slider x:Name="sliderTime"
+                Maximum="300"
+                Minimum="10"
+                MinimumTrackColor="ForestGreen"
+                ThumbColor="Black"
+                Value="30"
+                MaximumTrackColor="Aquamarine"
+                ValueChanged="sliderTime_ValueChanged"
+                Margin="0, 15, 0, 10"/>
+
+        <Label Text="{Binding Source={x:Reference sliderTime},
+                              Path=Value,
+                              StringFormat='{0} хвилин(и)'}"
+               FontSize="30"
+               HorizontalOptions="Center" 
+               Margin="0, 0, 0, 15"/>
+
+        <Entry x:Name="entryName"
+               Placeholder="Назва риби (навчання, робота...)"/>
+
+        <Button Text="Нова ікра"
+                HorizontalOptions="Center"
+                BorderWidth="150"
+                Clicked="NewCaviar_Clicked"/>
+        
+    </StackLayout>
+    
+</ContentPage>

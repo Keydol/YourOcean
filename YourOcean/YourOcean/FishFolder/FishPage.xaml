@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="YourOcean.FishFolder.FishPage"
+             Title="Риба">
+    <ContentPage.Content>
+        <StackLayout Padding="8, 8, 8, 8">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Назва: "/>
+                <Label Text="{Binding Name}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Виділений час: "/>
+                <Label Text="{Binding DedicatedTime}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Початок: "/>
+                <Label Text="{Binding StartDateTime}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Кінець: "/>
+                <Label Text="{Binding EndDateTime}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
