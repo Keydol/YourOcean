@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using YourOcean.Models;
+using YourOcean.StatsFolder;
 
 namespace YourOcean
 {
@@ -66,5 +67,7 @@ namespace YourOcean
                 BindingContext = dieFish
             });
         }
+
+        
     }
 }

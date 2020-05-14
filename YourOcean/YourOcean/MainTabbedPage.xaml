@@ -18,6 +18,10 @@
             <local:MainPage />
         </x:Arguments>
     </NavigationPage>
-    
-    <local:Settings />
+
+    <NavigationPage Title="Статистика">
+        <x:Arguments>
+            <local:StatsPage />
+        </x:Arguments>
+    </NavigationPage>
 </TabbedPage>

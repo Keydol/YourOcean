@@ -23,7 +23,8 @@
                        VerticalOptions="Center"/>
                 <Button x:Name="buttonAlive"
                         Text="Переглянути"
-                        Clicked="buttonAlive_Clicked"/>
+                        Clicked="buttonAlive_Clicked"
+                        Margin="30, 0, 0, 0"/>
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Мертві ікринки: "

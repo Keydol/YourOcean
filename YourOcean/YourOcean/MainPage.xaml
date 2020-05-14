@@ -22,7 +22,8 @@
                 Value="30"
                 MaximumTrackColor="Aquamarine"
                 ValueChanged="sliderTime_ValueChanged"
-                Margin="0, 15, 0, 10"/>
+                Margin="0, 15, 0, 10"
+                AutomationId="sliderTimeAI"/>
 
         <Label Text="{Binding Source={x:Reference sliderTime},
                               Path=Value,
