@@ -16,6 +16,8 @@ namespace YourOcean
         private int minutes;
         private int seconds;
         private bool stopTimer;
+        int id;
+        Fish fish;
 
         public GrowingCaviar()
         {
@@ -27,13 +29,21 @@ namespace YourOcean
 
         protected override void OnAppearing()
         {
+            
+
             stopTimer = false;
 
-            var fish = (Fish)BindingContext;
+            fish = (Fish)BindingContext;
             minutes = 0;
-            seconds = 5;
-            //minutes = fish.DedicatedTime - 1;
-            //seconds = 60;
+            seconds = 8;
+            minutes = fish.DedicatedTime - 1;
+            seconds = 60;
+
+            fish.EndDateTime = DateTime.MinValue;
+            fish.Alive = false;
+            id = App.Database.SaveItem(fish);
+
+            //DisplayAlert("Упс", "id: " + id.ToString(), "Жаль");
 
             base.OnAppearing();
         }
@@ -72,7 +82,8 @@ namespace YourOcean
 
         private async void readyCaviar()
         {
-            var fish = (Fish)BindingContext;
+            //var fish = (Fish)BindingContext;
+            fish.Id = id;
             fish.EndDateTime = DateTime.Now;
             fish.Alive = true;
             App.Database.SaveItem(fish);
@@ -87,7 +98,8 @@ namespace YourOcean
         {
             stopTimer = true;
 
-            var fish = (Fish)BindingContext;
+            //var fish = (Fish)BindingContext;
+            fish.Id = id;
             fish.EndDateTime = DateTime.Now;
             fish.Alive = false;
             App.Database.SaveItem(fish);

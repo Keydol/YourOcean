@@ -8,6 +8,7 @@
              Title="Статистика">
     <ContentPage.Content>
         <StackLayout Padding="20, 20, 20, 20">
+            <Label Text="В хвилинах"/>
             <Button x:Name="ButtonStats"
                     Text="За останній тиждень (живі)"
                     Clicked="ButtonStats_Clicked"/>
@@ -17,6 +18,18 @@
             <Button x:Name="ButtonStatsAllTime"
                     Text="За весь час"
                     Clicked="ButtonStatsAllTime_Clicked"/>
+
+            <Label Text="Поштучно"/>
+            <Button x:Name="ButtonStatsNumberAllTime"
+                    Text="За останній тиждень (живі)"
+                    Clicked="ButtonStatsNumberAllTime_Clicked"/>
+            <Button x:Name="ButtonStatsNumberLastThreeDays"
+                    Text="За останні 3 дні (живі і мертві)"
+                    Clicked="ButtonStatsNumberLastThreeDays_Clicked"/>
+            <Button x:Name="ButtonStatsNumber"
+                    Text="За весь час"
+                    Clicked="ButtonStatsNumber_Clicked"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

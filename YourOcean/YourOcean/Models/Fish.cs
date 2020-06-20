@@ -8,6 +8,7 @@ namespace YourOcean.Models
     [Table("Fish")]
     public class Fish
     {
+        //[PrimaryKey, AutoIncrement, Column("_id")]
         [PrimaryKey, AutoIncrement, Column("_id")]
         public int Id { set; get; }
         public string Name { set; get; }

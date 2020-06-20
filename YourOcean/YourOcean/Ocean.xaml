@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:local="clr-namespace:YourOcean"
              x:Class="YourOcean.Ocean"
              Title="Океан">
     <ContentPage.Content>
@@ -37,6 +38,8 @@
                         Text="Переглянути"
                         Clicked="buttonDie_Clicked"/>
             </StackLayout>
+
+            <Image Source="{local:ImageResource YourOcean.images.fish.gif}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

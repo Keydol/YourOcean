@@ -14,10 +14,27 @@ namespace YourOcean
     public partial class MainPage : ContentPage
     {
         Fish fish;
+        List<Fish> fishes;
         private double stepValue = 1.0;
         public MainPage()
         {
             InitializeComponent();
+
+            //if(ContextCompat)
+
+            fishes = (List<Fish>)App.Database.GetItems();
+
+            foreach (Fish fish in fishes)
+            {
+                if (fish.EndDateTime.Equals(DateTime.MinValue)) {
+                    DisplayAlert("Упс", "Схоже риба " + fish.Name + " не вижила. Можливо ви покинули гру, коли поставили вирощуватися ікру", 
+                        "Ок");
+                    fish.EndDateTime = DateTime.Now;
+                    App.Database.SaveItem(fish);
+                }
+            }
+
+            
         }
         private void sliderTime_ValueChanged(object sender, ValueChangedEventArgs e)
         {
@@ -45,8 +62,10 @@ namespace YourOcean
                 Navigation.RemovePage(this);
             }
         }
+
+        private void PaintButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Paint.MainPaint());
+        }
     }
 }
-
-// статистика скільки часу потратили за день/тиждень 
-// юніт тест

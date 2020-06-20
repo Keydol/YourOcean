@@ -35,7 +35,9 @@ namespace YourOcean
             }
             else
             {
-                return database.Insert(item);
+                database.Insert(item);
+                return database.ExecuteScalar<int>("SELECT _id FROM Fish ORDER BY _id DESC LIMIT 1");
+                //return 1;
             }
         }
     }

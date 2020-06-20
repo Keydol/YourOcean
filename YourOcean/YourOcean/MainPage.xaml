@@ -39,7 +39,10 @@
                 HorizontalOptions="Center"
                 BorderWidth="150"
                 Clicked="NewCaviar_Clicked"/>
-        
+        <Button x:Name="PaintButton"
+                Text="Малювання"
+                Clicked="PaintButton_Clicked"/>
+
     </StackLayout>
     
 </ContentPage>

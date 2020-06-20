@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YourOcean", "YourOcean\Your
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{DC0935ED-3289-41A2-8B2C-F1B80A297D0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITest", "UITest\UITest.csproj", "{9FE70040-D15B-4CE3-8B77-C0A2F932795F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,24 +75,9 @@ Global
 		{E79D2BA3-FEA6-4361-96EC-739C012516E0}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{E79D2BA3-FEA6-4361-96EC-739C012516E0}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{E79D2BA3-FEA6-4361-96EC-739C012516E0}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Release|iPhone.Build.0 = Release|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{9FE70040-D15B-4CE3-8B77-C0A2F932795F} = {DC0935ED-3289-41A2-8B2C-F1B80A297D0F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7117D934-67A2-444B-B9D5-B343FE464292}

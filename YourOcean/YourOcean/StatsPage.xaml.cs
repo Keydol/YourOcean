@@ -51,5 +51,29 @@ namespace YourOcean
                 BindingContext = fishes
             });
         }
+
+        private async void ButtonStatsNumberAllTime_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new StatsNumber
+            {
+                BindingContext = fishes
+            });
+        }
+
+        private async void ButtonStatsNumberLastThreeDays_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new StatsNumberLastThreeDays
+            {
+                BindingContext = fishes
+            });
+        }
+
+        private async void ButtonStatsNumber_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new StatsNumberAllTime
+            {
+                BindingContext = fishes
+            });
+        }
     }
 }
