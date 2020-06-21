@@ -45,10 +45,10 @@ namespace YourOcean.StatsFolder
                 Color = SkiaSharp.SKColor.Parse("#eb4034")
             });
 
-            ChartFish.Chart = new DonutChart
+            ChartFish.Chart = new LineChart
             {
                 Entries = enties,
-                LabelTextSize = 30
+                LabelTextSize = 35
             };
 
 

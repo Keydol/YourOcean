@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              x:Class="YourOcean.StatsFolder.StatsAllTime"
              Title="За весь час">
-    <ContentPage.Content>
+
         <forms:ChartView x:Name="ChartFish" HeightRequest="150"/>
-    </ContentPage.Content>
+
 </ContentPage>

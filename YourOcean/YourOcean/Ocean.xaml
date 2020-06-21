@@ -4,7 +4,6 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:local="clr-namespace:YourOcean"
              x:Class="YourOcean.Ocean"
              Title="Океан">
     <ContentPage.Content>
@@ -39,7 +38,9 @@
                         Clicked="buttonDie_Clicked"/>
             </StackLayout>
 
-            <Image Source="{local:ImageResource YourOcean.images.fish.gif}"/>
+            <ImageButton x:Name="YourOceanButton" Clicked="YourOceanButton_Clicked" Source="down.png" VerticalOptions="EndAndExpand" WidthRequest="50"
+                         HorizontalOptions="CenterAndExpand" BorderWidth="0" CornerRadius="100"/>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

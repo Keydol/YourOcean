@@ -36,8 +36,8 @@ namespace YourOcean
             fish = (Fish)BindingContext;
             minutes = 0;
             seconds = 8;
-            minutes = fish.DedicatedTime - 1;
-            seconds = 60;
+            //minutes = fish.DedicatedTime - 1;
+            //seconds = 60;
 
             fish.EndDateTime = DateTime.MinValue;
             fish.Alive = false;

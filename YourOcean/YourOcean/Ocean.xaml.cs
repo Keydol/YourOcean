@@ -23,6 +23,7 @@ namespace YourOcean
             InitializeComponent();
         }
 
+       
         protected override void OnAppearing()
         {
             fishes = (List<Fish>)App.Database.GetItems();
@@ -30,13 +31,14 @@ namespace YourOcean
             aliveFish = new List<Fish>();
             dieFish = new List<Fish>();
 
+            
 
             foreach(Fish fish in fishes) {
                 if (fish.Alive) aliveFish.Add(fish);
                 else dieFish.Add(fish);
             }
 
-            //Очистка бази даних
+            ////Очистка бази даних
             //foreach (Fish fish in fishes)
             //{
             //    App.Database.DeleteItem(fish.Id);
@@ -68,6 +70,9 @@ namespace YourOcean
             });
         }
 
-        
+        private async void YourOceanButton_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new OceanWithFish());
+        }
     }
 }

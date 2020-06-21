@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:YourOcean"
+             x:Class="YourOcean.OceanWithFish"
+             BackgroundImageSource="ocean"
+             Title="YourOcean">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image Source="{local:ImageResource YourOcean.images.yellow-fish.png}" WidthRequest="100" HeightRequest="50" x:Name="Fish1"/>
+            
+            <StackLayout Orientation="Horizontal">
+                <Image Source="{local:ImageResource YourOcean.images.fish1.png}" WidthRequest="60" HeightRequest="60" x:Name="Fish11" HorizontalOptions="StartAndExpand" />
+                <Image Source="{local:ImageResource YourOcean.images.fish2.png}" WidthRequest="60" HeightRequest="60" x:Name="Fish12" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="{local:ImageResource YourOcean.images.fish3.png}" WidthRequest="60" HeightRequest="60" x:Name="Fish13" HorizontalOptions="CenterAndExpand"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish4.png}" WidthRequest="80" HeightRequest="60" x:Name="Fish14" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="{local:ImageResource YourOcean.images.fish5.png}" WidthRequest="60" HeightRequest="60" x:Name="Fish15" HorizontalOptions="Start"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish6.png}" WidthRequest="80" HeightRequest="80" x:Name="Fish16" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="{local:ImageResource YourOcean.images.fish7.png}" WidthRequest="60" HeightRequest="60" x:Name="Fish17" HorizontalOptions="CenterAndExpand"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish8.png}" WidthRequest="60" HeightRequest="60" x:Name="Fish18" HorizontalOptions="End"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="{local:ImageResource YourOcean.images.fish9.png}" WidthRequest="80" HeightRequest="80" x:Name="Fish19" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="CenterAndExpand">
+                <Image Source="{local:ImageResource YourOcean.images.fish-caviar.png}" WidthRequest="30" HeightRequest="30" x:Name="Caviar1"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish-caviar.png}" WidthRequest="30" HeightRequest="30" x:Name="Caviar2"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish-caviar.png}" WidthRequest="30" HeightRequest="30" x:Name="Caviar3"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish-caviar.png}" WidthRequest="30" HeightRequest="30" x:Name="Caviar4"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish-caviar.png}" WidthRequest="30" HeightRequest="30" x:Name="Caviar5"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish-caviar.png}" WidthRequest="30" HeightRequest="30" x:Name="Caviar6"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish-caviar.png}" WidthRequest="30" HeightRequest="30" x:Name="Caviar7"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish-caviar.png}" WidthRequest="30" HeightRequest="30" x:Name="Caviar8"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish-caviar.png}" WidthRequest="30" HeightRequest="30" x:Name="Caviar9"/>
+                <Image Source="{local:ImageResource YourOcean.images.fish-caviar.png}" WidthRequest="30" HeightRequest="30" x:Name="Caviar10"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

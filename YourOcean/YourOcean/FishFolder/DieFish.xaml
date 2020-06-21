@@ -17,6 +17,7 @@
                             <StackLayout Orientation="Horizontal">
                                 <Label Text="{Binding StartDateTime}"
                                        FontSize="Medium"/>
+                                <Label Text="|"/>
                                 <Label Text="{Binding Name}"
                                        FontSize="Medium"/>
                             </StackLayout>

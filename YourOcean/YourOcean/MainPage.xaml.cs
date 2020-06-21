@@ -62,10 +62,5 @@ namespace YourOcean
                 Navigation.RemovePage(this);
             }
         }
-
-        private void PaintButton_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new Paint.MainPaint());
-        }
     }
 }

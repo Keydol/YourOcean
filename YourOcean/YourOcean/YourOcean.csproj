@@ -28,11 +28,35 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="images\fish-caviar.png" />
     <None Remove="images\fish.gif" />
+    <None Remove="images\fish1.png" />
+    <None Remove="images\fish2.png" />
+    <None Remove="images\fish3.png" />
+    <None Remove="images\fish4.png" />
+    <None Remove="images\fish5.png" />
+    <None Remove="images\fish6.png" />
+    <None Remove="images\fish7.png" />
+    <None Remove="images\fish8.png" />
+    <None Remove="images\fish9.png" />
+    <None Remove="images\ocean.jpg" />
+    <None Remove="images\yellow-fish.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="images\fish-caviar.png" />
     <EmbeddedResource Include="images\fish.gif" />
+    <EmbeddedResource Include="images\fish1.png" />
+    <EmbeddedResource Include="images\fish2.png" />
+    <EmbeddedResource Include="images\fish3.png" />
+    <EmbeddedResource Include="images\fish4.png" />
+    <EmbeddedResource Include="images\fish5.png" />
+    <EmbeddedResource Include="images\fish6.png" />
+    <EmbeddedResource Include="images\fish7.png" />
+    <EmbeddedResource Include="images\fish8.png" />
+    <EmbeddedResource Include="images\fish9.png" />
+    <EmbeddedResource Include="images\ocean.jpg" />
+    <EmbeddedResource Include="images\yellow-fish.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -61,6 +85,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Ocean.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="OceanWithFish.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Paint\MainPaint.xaml">
