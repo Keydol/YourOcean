@@ -50,6 +50,10 @@ namespace YourOcean
 
         private bool OnTimerTick()
         {
+            if (App.appSleep == true)
+            {
+                dieFish();
+            }
             if (stopTimer)
             {
                 return false;
@@ -94,7 +98,12 @@ namespace YourOcean
             Navigation.RemovePage(this);
         }
 
-        private async void buttonFf_Clicked(object sender, EventArgs e)
+        private void buttonFf_Clicked(object sender, EventArgs e)
+        {
+            dieFish();
+        }
+
+        private async void dieFish()
         {
             stopTimer = true;
 

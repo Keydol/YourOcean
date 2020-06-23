@@ -44,6 +44,7 @@ namespace YourOcean
 
         protected override void OnResume()
         {
+            appSleep = false;
         }
     }
 }

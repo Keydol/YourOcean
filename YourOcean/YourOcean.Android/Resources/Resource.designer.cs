@@ -8377,6 +8377,9 @@ namespace YourOcean.Droid
 			// aapt resource value: 0x7F07007A
 			public const int tooltip_frame_light = 2131165306;
 			
+			// aapt resource value: 0x7F07007B
+			public const int youroceanlogo = 2131165307;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -9341,6 +9344,9 @@ namespace YourOcean.Droid
 			
 			// aapt resource value: 0x7F0C0002
 			public const int launcher_foreground = 2131492866;
+			
+			// aapt resource value: 0x7F0C0003
+			public const int youroceanlogo = 2131492867;
 			
 			static Mipmap()
 			{
